@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@700&family=Koulen&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --red:#F2272F;
+    --green:#38C378;
+    --orange:#95641A;
+    --pink:#FA5480;
+    --blue:#4390F8;
+    --font-size: 22px;
+    --font-K:'Koulen';
+    --font-B:'Battambang';
+}
+.header{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    align-items: center;
+}
+.header .box{
+    width: 75%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+/* navbar section */
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: var(--red);
+}
+.navbar .nav{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+.nav ul li{
+    padding: 15px 20px;
+}
+.nav ul li a{
+    color: white;
+    font-size: var(--font-size);
+    font-family: var(--font-K);
+    text-decoration: none;
+    opacity: 0.6;
+    
+}
+.nav ul .xo{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    opacity: 0.4;
+}
+.nav li:hover a{
+    opacity: 1;
+}
+/* navbar section */
+.body{
+    width: 75%;
+    height: 510px;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.body .box1{
+    width: 74%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.body .box1 .sbox1{
+    width: 60%;
+    height: 50%;
+    position: relative;
+}
+.body .box1 .sbox2{
+    width: 40%;
+    height: 50%;
+    position: relative;
+}
+.body .box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.body .box1 .overlay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+}
+.sbox1:hover .overlay{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.sbox2:hover .overlay{
+    opacity: 0.88;
+    transition: 0.5s;
+}
+.body .box1 .text{
+    width: 90%;
+    height: 62px;
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    color: white;
+    font-family: var(--font-B);
+    overflow: hidden;
+    transition: 0.4s;
+}
+.body .box1 a{
+    color: white;
+    text-decoration: none;
+}
+.body .text h2{
+    font-size: 21px;
+    line-height: 30px;
+}
+.body .text p{
+    font-size: 13px;
+    line-height: 22px;
+    opacity: 0.7;
+}
+.sbox1:hover .text{
+    width: 90%;
+    height: 125px;
+    position: absolute;
+    top: 80px;
+    transition: 0.5s;
+}
+.sbox2:hover .text{
+    width: 90%;
+    height: 135px;
+    position: absolute;
+    top: 75px;
+    transition: 0.5s;
+}
+.sbox1:hover h2{
+    color: var(--red);
+}
+.sbox2:hover h2{
+    color: var(--red);
+}
+.body .time{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: aliceblue;
+    font-family: var(--font-B);
+    opacity: 0.6;
+    font-size: 13px;
+}
+.body .corner{
+    width: 95px;
+    height: 30px;
+    background-color: var(--green);
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 5%;
+    font-family: var(--font-B);
+    font-size: 17px;
+}
+.body .sbox1 .border{
+    width: 10px;
+    height: 30.5px;
+    background-color: var(--green);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    position: absolute;
+    top: 4.80%;
+    left: 18.7%;
+}
+.body .sbox2 .border{
+    width: 10px;
+    height: 30.5px;
+    background-color: var(--blue);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    position: absolute;
+    top: 4.96%;
+    left: 28.27%;
+}
+
+.body .box2{
+    width: 25%;
+    height: 100%;
+    background: #FA5480;
+    display: flex;
+    flex-direction: column;
+}
+
+.box2 .ssbox{
+    width: 100%;
+    height: 50%;
+}
+.ssbox iframe{
+    width: 100%;
+    height: 100%;
+}
+/* body-1 */
+.body-1{
+    width: 75%;
+    height: 680px;
+    position: relative;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.body-1 .icon{
+    width: 100%;
+    height: 44.5px;
+    background-color: white;
+}
+i{
+ color: aliceblue;
+ font-size: 30px;
+ margin-top: 5.5px;
+ margin-right: 0;
+}
+.body-1 .icon .corner-1{
+    width: 103px;
+    height: 45px;
+    background-color: var(--red);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+.body-1 .icon .corner-1 a{
+    color: white;
+    text-decoration: none;
+    font-size: var(--font-size);
+    font-family: var(--font-B);
+    display: flex;
+    justify-content: center;
+}
+.border-1{
+    background-color: var(--red);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    width: 15px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    left: 9.01%;
+}
+.bog{
+    width: 100%;
+    height: 630px;
+    border-top: 3px solid var(--red);
+    display: flex;
+    flex-direction: column;
+    padding: 25px 40px;
+    box-shadow: 1px 1px 1px 1px rgb(193, 190, 190);
+}
+.bog .bog-1{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+.bog .bog-2{
+    width: 100%;
+    height: 55%;
+    display: flex;
+}
+.bog .sbog-1{
+    width: 33%;
+    height: 200px;
+}
+.bog .sbog-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.bog .sbog-1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: var(--font-B);
+    line-height: 24px;
+}
+.bog .ssbog-1{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bog .ssbog-2{
+    width: 30%;
+    height: 100%;
+    padding-top: 6px;
+    padding-left: 23px;
+}
+.bog .ssbog{
+    width: 163px;
+    height: 50%;
+}
+.bog .ssbog img{
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.bog .ssbog .text p{
+    font-size: 15px;
+    font-family: var(--font-B);
+    line-height: 20px;
+    color: black;
+    opacity: 0.7;
+}
+.bog .ssbog-1 a{
+    text-decoration: none;
+}
+.bog .ssbog-2 img{
+    width: 100%;
+    height: auto;
+}
+.bog .ssbog:hover p{
+    color: black;
+    opacity: 1;
+}
+.bog .ssbog:hover img{
+    transform: scale(0.95);
+    transition: 0.4s;
+}
+.bog .sbog-1:hover img{
+    transform: scale(0.95);
+    transition: 0.4s;
+}
